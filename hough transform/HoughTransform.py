@@ -20,7 +20,7 @@ def lines_detector_hough(edge,ThetaDim = None,DistStep = None,threshold = None,h
     if DistStep == None:
         DistStep = 1
     MaxDist = np.sqrt(imgsize[0]**2 + imgsize[1]**2)
-    DistDim = int(np.ceil(MaxDist/DistStep))
+    DistDim = int(np.ceil(MaxDist/DistStep))    # dist轴的刻度数量，向上取整
 
     if halfDistWindowSize == None:
         halfDistWindowSize = int(DistDim/50)
@@ -39,7 +39,7 @@ def lines_detector_hough(edge,ThetaDim = None,DistStep = None,threshold = None,h
 
     if threshold == None:
         threshold = int(M*2.3875/10)
-    result = np.array(np.where(accumulator > threshold)) # 阈值化
+    result = np.array(np.where(accumulator > threshold))  # 阈值化
     temp = [[],[]]
     for i in range(result.shape[1]):
         eight_neiborhood = accumulator[max(0, result[0,i] - halfThetaWindowSize + 1):min(result[0,i] + halfThetaWindowSize, accumulator.shape[0]), max(0, result[1,i] - halfDistWindowSize + 1):min(result[1,i] + halfDistWindowSize, accumulator.shape[1])]
@@ -88,7 +88,7 @@ if __name__=='__main__':
                 gray = cv2.cvtColor(blurred, cv2.COLOR_RGB2GRAY)
             else:
                 gray = blurred
-            edge = cv2.Canny(gray, 50, 150)   #  二值图 (0 或 255) 得到 canny边缘检测的结果
+            edge = cv2.Canny(gray, 50, 150)   # 二值图 (0 或 255) 得到 canny边缘检测的结果
 
 
             lines = lines_detector_hough(edge)
