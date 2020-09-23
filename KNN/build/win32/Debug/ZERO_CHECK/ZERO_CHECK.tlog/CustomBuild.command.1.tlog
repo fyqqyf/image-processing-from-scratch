@@ -1,0 +1,10 @@
+^D:\编程\IMAGE-PROCESSING-FROM-SCRATCH\KNN\BUILD\CMAKEFILES\202D13FFCDA5E4FEE640CC3FB76F9A51\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/编程/image-processing-from-scratch/KNN -BD:/编程/image-processing-from-scratch/KNN/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/编程/image-processing-from-scratch/KNN/build/Main.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

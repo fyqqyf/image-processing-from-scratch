@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/canny edge detection" />
+      <excludeFolder url="file://$MODULE_DIR$/fast fourier transform" />
       <excludeFolder url="file://$MODULE_DIR$/harris corner detection" />
       <excludeFolder url="file://$MODULE_DIR$/hough transform" />
       <excludeFolder url="file://$MODULE_DIR$/introduction &amp; basics" />

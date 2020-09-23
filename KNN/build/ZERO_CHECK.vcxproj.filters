@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\编程\image-processing-from-scratch\KNN\build\CMakeFiles\202d13ffcda5e4fee640cc3fb76f9a51\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4B7A9820-8846-3257-BE15-8637E01290F1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

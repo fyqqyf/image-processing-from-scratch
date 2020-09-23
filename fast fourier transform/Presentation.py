@@ -3,7 +3,7 @@ import numpy as np
 
 if __name__=='__main__':
     img = plt.imread('./img/raccoon.jpg')
-    plt.imshow(img, cmap=plt.cm.gray)
+    plt.imshow(img, cmap=plt.cm.gray)   #灰度只对2—D图像操作有效
     plt.axis('off')
     plt.show()
 
@@ -21,6 +21,7 @@ if __name__=='__main__':
     plt.show()  # image after fourier transform
     #plt.imsave('fourier_raccoon.jpg', 14*np.dstack((magnitude_spectrum.astype(np.uint8),magnitude_spectrum.astype(np.uint8),magnitude_spectrum.astype(np.uint8))))
 
+    # 中间亮部为低频信息
     x,y = img.shape
     lowF = np.zeros((x, y))
     lowF = lowF.astype(np.complex128)

@@ -20,7 +20,7 @@ namespace KNN
                     treenode(const std::vector<double > & coord, const unsigned long & axis, const unsigned long & ind):
                             axis(axis),index(ind),lchild(nullptr),rchild(nullptr)
                     {
-                        assert(!coord.empty());
+                        //assert(!coord.empty());
                         coordinate = new double[coord.size()];
                         for (unsigned long i= 0; i < coord.size(); ++i) {
                             coordinate[i] = coord[i];
@@ -66,13 +66,13 @@ namespace KNN
 
     KDTree::KDTree(const std::vector<std::vector<double> > & Data)
     {
-        assert(!Data.empty());
-        assert(!Data[0].empty());
+        //assert(!Data.empty());
+        //assert(!Data[0].empty());
         std::vector< std::pair<std::vector<double >, unsigned long > > DataWithInd;
         DataWithInd.push_back(std::make_pair(Data[0],0));
         for(unsigned long i = 1;i < Data.size();i++)
         {
-            assert(Data[i].size() == Data[0].size());
+            //assert(Data[i].size() == Data[0].size());
             DataWithInd.push_back(std::make_pair(Data[i],i));
         }
         dim = Data[0].size();
@@ -124,7 +124,7 @@ namespace KNN
     }
 
     void KDTree::deleteKDTree(KNN::KDTree::treenode * t) {
-        assert(t);
+        //assert(t);
         auto lchild = t->getLchild();
         auto rchild = t->getRchild();
         if(lchild)
@@ -194,8 +194,8 @@ namespace KNN
     }
 
     std::vector<std::pair<unsigned long,double> > KDTree::findKneighbor(const std::vector<double> & P,const unsigned long & k) const {
-        assert(P.size() == dim);
-        assert(k>0);
+        //assert(P.size() == dim);
+        //assert(k>0);
         std::vector<treenode* > path;
         std::vector<std::pair<unsigned long,double> > result;
         findPath(path,tree,P);

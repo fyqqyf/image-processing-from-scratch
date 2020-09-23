@@ -1,0 +1,3 @@
+D:/编程/image-processing-from-scratch/KNN/build/CMakeFiles/Main.dir
+D:/编程/image-processing-from-scratch/KNN/build/CMakeFiles/ALL_BUILD.dir
+D:/编程/image-processing-from-scratch/KNN/build/CMakeFiles/ZERO_CHECK.dir
