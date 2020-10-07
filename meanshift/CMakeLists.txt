@@ -1,10 +1,10 @@
-cmake_minimum_required(VERSION 3.12)
+# cmake_minimum_required(VERSION 3.12)
 project(Main)
 
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Main main.cpp)
-
+# set(OpenCV_DIR D:/opencv3.4.6/opencv/mingw_build)
 
 FIND_PACKAGE(OpenCV REQUIRED)
 IF(OpenCV_FOUND)

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/mnt/d/programing/image-processing-from-scratch/meanshift/build",
+  "command": "/usr/bin/g++-7   -isystem /usr/local/include -isystem /usr/local/include/opencv  -g   -std=gnu++14 -o CMakeFiles/Main.dir/main.o -c /mnt/d/programing/image-processing-from-scratch/meanshift/main.cpp",
+  "file": "/mnt/d/programing/image-processing-from-scratch/meanshift/main.cpp"
+}
+]

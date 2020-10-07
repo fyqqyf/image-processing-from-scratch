@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\programing\image-processing-from-scratch\meanshift\build\CMakeFiles\078e764a6f2085c909e1cb96c8dfcbdd\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9371FBFA-FF8A-36D0-A373-D7FD2ACE6A69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

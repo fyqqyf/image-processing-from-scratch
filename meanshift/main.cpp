@@ -1,13 +1,18 @@
-//
-// author: 会飞的吴克
-//
+/*
+ * @Descripttion : 
+ * @Author       : Fu Yuqian
+ * @Date         : 2020-07-05 19:18:16
+ * @LastEditors  : Fu Yuqian
+ * @LastEditTime : 2020-09-30 15:47:08
+ * @FilePath     : \meanshift\main.cpp
+ */
 
 #include <opencv2/opencv.hpp>
 #include "meanshift.h"
 
 void test_meanshift()
 {
-    auto BGRimg = cv::imread("./meanshift/1.jpg"); // read image.
+    auto BGRimg = cv::imread("../2.jpg"); // read image.
     cv::imshow("display",BGRimg);
     cv::waitKey(0);
 

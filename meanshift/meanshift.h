@@ -1,6 +1,12 @@
-//
-// author: 会飞的吴克
-//
+/*
+ * @Descripttion : 
+ * @Author       : Fu Yuqian
+ * @Date         : 2020-07-05 19:18:16
+ * @LastEditors  : Fu Yuqian
+ * @LastEditTime : 2020-09-30 15:55:44
+ * @FilePath     : \meanshift\meanshift.h
+ */
+
 
 #ifndef IMAGEPROCESSINGFROMSCRATCH_MEANSHIFT_H
 #define IMAGEPROCESSINGFROMSCRATCH_MEANSHIFT_H
@@ -156,7 +162,7 @@ namespace Segmentation{
     void meanshift(const Image & src,Image & dst){
         const double sr = 6;
         const double tr = 8;
-        const unsigned long max_itr = 10;
+        const unsigned long max_itr = 1000;
         const double color_threshold = 0.05;
 
         assert(!src.empty());
